@@ -1,0 +1,257 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* Main content container */
+main {
+    min-height: 100%;
+}
+
+/* Push footer to the bottom */
+footer.footer {
+    margin-top: auto; 
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #f5f5f5;
+    background-color: #121212;
+}
+
+/* Navbar Styles */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(18, 18, 18, 0.8);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.3s, background 0.3s;
+}
+
+.navbar a:hover {
+    color: #1db954;
+    background: rgba(29, 185, 84, 0.2); 
+    border-radius: 5px;
+}
+
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #1e1e1e, #121212);
+    color: white;
+}
+
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 3px solid #1db954;
+}
+
+/* Content Sections */
+.journey-section,
+.achievements-section {
+    padding: 20px;
+    margin: 20px;
+    background: #1e1e1e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+h2 {
+    color: #1db954;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #2b2b2b;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 4px solid #1db954;
+}
+
+
+/* Certificate Section Styles */
+.pdf-viewer {
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.certificate-desc {
+    text-align: center;
+    color: #b3b3b3;
+    margin-top: 10px;
+}
+
+.download-link {
+    color: #1db954;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.download-link:hover {
+    color: #00ff99;
+}
+
+/* Skills Section */
+.skills-section {
+    background-color: #1a1a1a; /* Dark background */
+    color: #f5f5f5; /* Light text */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.skills-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    color: #1db954; /* Highlight color */
+    margin-bottom: 20px;
+}
+
+.skills-section p {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #d9d9d9;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Skill Item */
+.skill-item {
+    background-color: #2a2a2a; /* Slightly lighter dark */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.skill-item h3 {
+    font-size: 24px;
+    color: #1db954; /* Highlight color */
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    font-size: 16px;
+    color: #e0e0e0;
+}
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #1e1e1e;
+    color: #b3b3b3;
+}
+
+footer p:hover {
+    color: #1db954;
+}
+
+
+/* For tablets and small screens */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 30px 10px;
+    }
+
+    .profile-img {
+        width: 120px;
+    }
+
+    .journey-section,
+    .achievements-section,
+    .skills-section {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    ul li {
+        padding: 8px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-item {
+        padding: 15px;
+    }
+
+    .profile-img {
+        width: 100px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
